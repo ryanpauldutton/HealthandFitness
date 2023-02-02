@@ -2,6 +2,18 @@ h1 {
   color: white;
 }
 
+body {
+  font-family: 'Syne', sans-serif !important;
+  color: aliceblue !important;
+}
+
+h1 {
+  font-size: 6vw !important;
+  font-family: 'Syne', sans-serif;
+  color: aliceblue;
+font-weight: 800;
+}
+
 .intro {
     background-color: yellow;
     height: 100px;
@@ -18,5 +30,26 @@ h1 {
   }
 
   * {
-    background-color: forestgreen;
+    background-color: #272727;
   }
+
+  .gradBG {
+    
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 3vh;
+    }
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    

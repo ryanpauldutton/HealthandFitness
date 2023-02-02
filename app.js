@@ -87,24 +87,45 @@ let exerciseDays = [
 
 $.ajax(settings).done(function (response) {
     console.log(response);
-    for (i = 0; i < response.length; i++) {
-        let exName = response[i]['name'];
-        var exerciseExample = $("<div>");
-        exerciseExample.addClass('intro');
 
+
+
+    // for (i = 0; i < response.length; i++) {
+    //     let exName = response[i]['name'];
+    //     var exerciseExample = $("<div>");
+    //     exerciseExample.addClass('intro');
+
+        $( ".exButton" ).click(function() {
+
+            let exName = response[Math.floor(Math.random() * 10)]['name'];
+           
+            // alert( response[1]['name'] );
+          console.log(exName)
+            $(".exOne").text(exName);
+
+            let exNameTwo = response[Math.floor(Math.random() * 10)]['name'];
+            // alert( response[1]['name'] );
+          console.log(exName)
+            $(".exTwo").text(exNameTwo);
+            let exNameThree = response[Math.floor(Math.random() * 10)]['name'];
+            // alert( response[1]['name'] );
+          console.log(exName)
+            $(".exThree").text(exNameThree);
+
+        });
+        
         // WHY IS THIS NOT WORKING
 
-        exerciseExample.text(exName);
-        var exerciseName = $("<h3>");
+        // exerciseExample.text(exName);
+        // var exerciseName = $("<h3>");
         // title.addClass("title");
-        exerciseName.text(response[i].exerciseName);
+        // exerciseName.text(response[i].exerciseName);
         // var description = $("<p>");
         // description.addClass("description");
         // description.text(result.articles[i].description);
         // var number = $("<div class='articleNumber'>").text(articleNumber);
-        $("#divone").append(exerciseName, exerciseExample);
-    }
-});
+        // $("#divone").append(exerciseName, exerciseExample);
+    });
 
 
 
