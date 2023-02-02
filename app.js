@@ -79,7 +79,7 @@ let exerciseDays = [
     "url": 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?type=cardio',
     "method": "GET",
     "headers": {
-        "X-RapidAPI-Key": "c2856da5ddmshbcb350a08e89e58p1e58cdjsnc13064221ed7",
+        "X-RapidAPI-Key":"c2856da5ddmshbcb350a08e89e58p1e58cdjsnc13064221ed7",
         "X-RapidAPI-Host": "exercises-by-api-ninjas.p.rapidapi.com"
     }
 };
