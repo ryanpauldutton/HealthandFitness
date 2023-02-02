@@ -1,5 +1,22 @@
+h1 {
+  color: white;
+}
+
 .intro {
     background-color: yellow;
     height: 100px;
     width: 100px;
+  }
+
+  .planner{
+    width: 100%;
+  }
+
+  img{
+    height: 500px;
+    aspect-ratio: 1;
+  }
+
+  * {
+    background-color: forestgreen;
   }

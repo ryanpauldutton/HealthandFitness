@@ -88,9 +88,13 @@ let exerciseDays = [
 $.ajax(settings).done(function (response) {
     console.log(response);
     for (i = 0; i < response.length; i++) {
+        let exName = response[i]['name'];
         var exerciseExample = $("<div>");
         exerciseExample.addClass('intro');
-        exerciseExample.textContent(response[i]['name'])
+
+        // WHY IS THIS NOT WORKING
+
+        exerciseExample.text(exName);
         var exerciseName = $("<h3>");
         // title.addClass("title");
         exerciseName.text(response[i].exerciseName);
