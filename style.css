@@ -1,5 +1,6 @@
 h1 {
   color: white;
+  text-align: center !important;
 }
 
 body {
@@ -12,6 +13,11 @@ h1 {
   font-family: 'Syne', sans-serif;
   color: aliceblue;
 font-weight: 800;
+}
+
+.space{
+  height: 20px;
+  width: 100%;
 }
 
 .intro {

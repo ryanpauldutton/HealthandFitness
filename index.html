@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,153 +19,148 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Fitness Planner</title>
 </head>
 
 <body>
     <div class="gradBG"></div>
-<h1>WEEKLY PLANNER</h1>
-<hr>
-<!-- <form action="/action_page.php">
-    <label for="fname">Bfast:</label>
-    <input type="text" id="inputBfast" name="inputBfast"><br><br>
-    <input type="submit" id="inputBfastSubmit" value="Submit">
-  </form> -->
+    <h1>WEEKLY PLANNER</h1>
 
-  <input type="text" placeholder="Enter text" onblur="getVal()">
+    <div class="space"></div>
+    
+    <button class="btn btn-success save">SAVE PLAN</button>
 
-
-<div class="container-fluid planner">
-
-    <div class="row">
-        <div class="col-3 "></div>
-        <div class="col-3 "><b>Breakfast</b></div>
-        <div class="col-3 "><b>Lunch</b></div>
-        <div class="col-3 "><b>Dinner</b></div>
-
-
-    </div>
-
-    <div class="row">
-        <div class="col-3 "><button type="button" id="mondayFood" class="btn btn-primary">View Monday</button></div>
-        <div class="col-3" id="mondayFoodOne" "></div>
-        <div class="col-3" id="mondayFoodTwo" "></div>
-        <div class="col-3" id="mondayFoodThree" "></div>
-
-
-    </div>
-
-    <div class="row">
-        <div class="col-3 "><button type="button" id="tuesdayFood" class="btn btn-primary">View Tuesday</button></div>
-        <div class="col-3" id="tuesdayFoodOne" "></div>
-        <div class="col-3" id="tuesdayFoodTwo" "></div>
-        <div class="col-3" id="tuesdayFoodThree" "></div>
-
-
-    </div>
-
-    <div class="row">
-        <div class="col-3 "><button type="button" id="wednesdayFood" class="btn btn-primary">View Wednesday</button></div>
-        <div class="col-3" id="wednesdayFoodOne""></div>
-        <div class="col-3" id="wednesdayFoodTwo" "></div>
-        <div class="col-3" id="wednesdayFoodThree" "></div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-3 "><button type="button" id="thursdayFood" class="btn btn-primary">View Thurday</button></div>
-        <div class="col-3" id="thursdayFoodOne""></div>
-        <div class="col-3" id="thursdayFoodTwo""></div>
-        <div class="col-3" id="thursdayFoodThree""></div>
-
-
-    </div>
-
-    <div class="row">
-        <div class="col-3 "><button type="button" id="fridayFood" class="btn btn-primary">View Friday</button></div>
-        <div class="col-3" id="fridayFoodOne""></div>
-        <div class="col-3" id="fridayFoodTwo""></div>
-        <div class="col-3"  id="fridayFoodThree""></div>
-
-
-    </div>
+    <button class="btn btn-info show">SHOW PLAN</button>
 
     <div class="container-fluid planner">
 
         <div class="row">
             <div class="col-3 "></div>
-            <div class="col-3"  ><b>Exercise One</b></div>
-            <div class="col-3"  ><b>Exercise Two</b></div>
-            <div class="col-3" ><b>Exercise Three</b></div>
+            <div class="col-3 "><b>Breakfast</b></div>
+            <div class="col-3 "><b>Lunch</b></div>
+            <div class="col-3 "><b>Dinner</b></div>
 
 
         </div>
 
         <div class="row">
-            <div class="col-3 "><button type="button"  class="btn btn-primary " id="exButMon">View Monday</button></div>
-            <div class="col-3 exOneMon"></div>
-            <div class="col-3 exTwoMon"></div>
-            <div class="col-3 exThreeMon"></div>
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-3 "><button type="button" id="exButTue" class="btn btn-primary exButton">View Tuesday</button></div>
-            <div class="col-3 exOneTue"></div>
-            <div class="col-3 exTwoTue"></div>
-            <div class="col-3 exThreeTue"></div>
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-3 "><button type="button" id="exButWed" class="btn btn-primary exButton">View Wednesday</button></div>
-            <div class="col-3 exOneWed"></div>
-            <div class="col-3 exTwoWed"></div>
-            <div class="col-3 exThreeWed"></div>
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-3 "><button type="button" id="exButThu" class="btn btn-primary exButton">View Thursday</button></div>
-            <div class="col-3 exOneThu"></div>
-            <div class="col-3 exTwoThu"></div>
-            <div class="col-3 exThreeThu"></div>
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-3 "><button type="button" id="exButFri" class="btn btn-primary exButton">View Friday</button></div>
-            <div class="col-3 exOneFri"></div>
-            <div class="col-3 exTwoFri"></div>
-            <div class="col-3 exThreeFri"></div>
-
-
-        </div>
-
-        <!-- <img src="https://static.standard.co.uk/2022/09/20/10/Fitness.jpg?width=1024&auto=webp&quality=50&crop=968%3A645%2Csmart"
-            alt=""> -->
-
-
-
-        <!-- Force next columns to break to new line -->
+            <div class="col-3 "><button type="button" id="mondayFood" class="btn btn-primary">View Monday</button></div>
+            <div class="col-3 " id="mondayFoodOne" "></div>
+        <div class=" col-3 " id="mondayFoodTwo" "></div>
+        <div class=" col-3 " id="mondayFoodThree" "></div>
 
 
     </div>
 
+    <div class=" row">
+                <div class="col-3 "><button type="button" id="tuesdayFood" class="btn btn-primary">View Tuesday</button>
+                </div>
+                <div class="col-3" id="tuesdayFoodOne" "></div>
+        <div class=" col-3" id="tuesdayFoodTwo" "></div>
+        <div class=" col-3" id="tuesdayFoodThree" "></div>
 
 
+    </div>
 
-    
-        <!-- <div id="divone"></div> -->
+    <div class=" row">
+                    <div class="col-3 "><button type="button" id="wednesdayFood" class="btn btn-primary">View
+                            Wednesday</button></div>
+                    <div class="col-3" id="wednesdayFoodOne""></div>
+        <div class=" col-3" id="wednesdayFoodTwo" "></div>
+        <div class=" col-3" id="wednesdayFoodThree" "></div>
+
+    </div>
+
+    <div class=" row">
+                        <div class="col-3 "><button type="button" id="thursdayFood" class="btn btn-primary">View
+                                Thurday</button></div>
+                        <div class="col-3" id="thursdayFoodOne""></div>
+        <div class=" col-3" id="thursdayFoodTwo""></div>
+        <div class=" col-3" id="thursdayFoodThree""></div>
+
+
+    </div>
+
+    <div class=" row">
+                            <div class="col-3 "><button type="button" id="fridayFood" class="btn btn-primary">View
+                                    Friday</button></div>
+                            <div class="col-3" id="fridayFoodOne""></div>
+        <div class=" col-3" id="fridayFoodTwo""></div>
+        <div class=" col-3" id="fridayFoodThree""></div>
+
+
+    </div>
+</div>
+
+                            <div class=" container-fluid planner">
+
+                                <div class="row">
+                                    <div class="col-3 "></div>
+                                    <div class="col-3"><b>Exercise One</b></div>
+                                    <div class="col-3"><b>Exercise Two</b></div>
+                                    <div class="col-3"><b>Exercise Three</b></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3 "><button type="button" class="btn btn-primary "
+                                            id="exButMon">View Monday</button></div>
+                                    <div class="col-3 exOneMon"></div>
+                                    <div class="col-3 exTwoMon"></div>
+                                    <div class="col-3 exThreeMon"></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3 "><button type="button" id="exButTue"
+                                            class="btn btn-primary exButton">View Tuesday</button></div>
+                                    <div class="col-3 exOneTue"></div>
+                                    <div class="col-3 exTwoTue"></div>
+                                    <div class="col-3 exThreeTue"></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3 "><button type="button" id="exButWed"
+                                            class="btn btn-primary exButton">View Wednesday</button></div>
+                                    <div class="col-3 exOneWed"></div>
+                                    <div class="col-3 exTwoWed"></div>
+                                    <div class="col-3 exThreeWed"></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3 "><button type="button" id="exButThu"
+                                            class="btn btn-primary exButton">View Thursday</button></div>
+                                    <div class="col-3 exOneThu"></div>
+                                    <div class="col-3 exTwoThu"></div>
+                                    <div class="col-3 exThreeThu"></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3 "><button type="button" id="exButFri"
+                                            class="btn btn-primary exButton">View Friday</button></div>
+                                    <div class="col-3 exOneFri"></div>
+                                    <div class="col-3 exTwoFri"></div>
+                                    <div class="col-3 exThreeFri"></div>
+
+
+                                </div>
+
+
+                            </div>
+
 </body>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="ryan.js"></script>
-        <script src="keys.js"></script>
-        <script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="keys.js"></script>
+<script src="food.js"></script>
+<script src="exercise.js"></script>
 
 </html>
