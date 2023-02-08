@@ -1,7 +1,7 @@
 const settingsTwo = {
   "async": true,
   "crossDomain": true,
-  "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=apple",
+  "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=healthy",
   "method": "GET",
   "headers": {
     "X-RapidAPI-Key": "c2856da5ddmshbcb350a08e89e58p1e58cdjsnc13064221ed7",
