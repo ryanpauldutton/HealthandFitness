@@ -4,7 +4,7 @@ const settingsTwo = {
   "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=apple",
   "method": "GET",
   "headers": {
-    "X-RapidAPI-Key": APIkey,
+    "X-RapidAPI-Key": "c2856da5ddmshbcb350a08e89e58p1e58cdjsnc13064221ed7",
     "X-RapidAPI-Host": "edamam-food-and-grocery-database.p.rapidapi.com"
   }
 };
