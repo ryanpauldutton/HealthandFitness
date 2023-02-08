@@ -1,3 +1,5 @@
+
+// DECLARING FOR JQUERY LINK TO API / setting up API KEY
 const settingsTwo = {
   "async": true,
   "crossDomain": true,
@@ -9,14 +11,13 @@ const settingsTwo = {
   }
 };
 
+// AJAX CALLS SERVER TO GET RESPONSE 
 $.ajax(settingsTwo).done(function (response) {
-
+  // BUTTON CALLS FUNCTION TO RANDOMIZE RESPONSE FOR FOOD ITEMS 
   $("#mondayFood").click(function () {
-
-    localStorage.setItem('username','myusername');
-
+    // TARGETS ARRAY TO GET A RANDOMIZED RESPONSE
     let foodOneName = response['hints'][Math.floor(Math.random() * 10)]['food']['label'];
-    
+    // PUTS RESPONSE INFO INTO THE MONDAYFOOD COLUMN AS TEXT
     $("#mondayFoodOne").text(foodOneName);
 
     let foodTwoName = response['hints'][Math.floor(Math.random() * 10)]['food']['label'];
