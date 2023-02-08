@@ -1,6 +1,10 @@
 h1 {
   color: white;
   text-align: center !important;
+  font-size: 6vw !important;
+  font-family: 'Syne', sans-serif;
+  color: aliceblue;
+font-weight: 800;
 }
 
 body {
@@ -8,23 +12,10 @@ body {
   color: aliceblue !important;
 }
 
-h1 {
-  font-size: 6vw !important;
-  font-family: 'Syne', sans-serif;
-  color: aliceblue;
-font-weight: 800;
-}
-
 .space{
   height: 20px;
   width: 100%;
 }
-
-.intro {
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-  }
 
   .planner{
     width: 100%;
@@ -39,7 +30,7 @@ font-weight: 800;
     background-color: #272727;
   }
 
-  .gradBG {
+  .gradientBG {
     
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
       background-size: 400% 400%;

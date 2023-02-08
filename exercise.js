@@ -1,4 +1,4 @@
-// EXERCISES PULL
+// DECLARING FOR JQUERY LINK TO API / setting up API KEY
 const settings = {
     "async": true,
     "crossDomain": true,
@@ -10,13 +10,13 @@ const settings = {
     }
 };
 
-
+    // AJAX CALLS SERVER TO GET RESPONSE 
 $.ajax(settings).done(function (response) {
-
+     // BUTTON CALLS FUNCTION TO RANDOMIZE RESPONSE FOR FOOD ITEMS 
     $("#exButMon").click(function () {
-
+    // TARGETS ARRAY TO GET A RANDOMIZED RESPONSE
         let exName = response[Math.floor(Math.random() * 10)]['name'];
-
+    // PUTS RESPONSE INFO INTO THE MONDAYFOOD COLUMN AS TEXT
         $(".exOneMon").text(exName);
 
         let exNameTwo = response[Math.floor(Math.random() * 10)]['name'];
