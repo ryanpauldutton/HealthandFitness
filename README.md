@@ -1,6 +1,6 @@
 # HealthandFitness
 
-![DashBoardImage](/screenshot.png "Project Screenshot")
+![DashBoardImage](./screenshot.png "Project Screenshot")
 
 ## Description
 This is an app that allow users to see a daily plan of exercises and food menu that enable them keep fit and healthy. It is a one screen app that displays for each day of the week the type of exercise(one should engage in) and food( one should consume).
